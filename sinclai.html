@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legal House - Prémiová advokátní kancelář v Praze. Specializujeme se na finanční právo, M&A transakce, korporátní právo a kryptoaktiva. Více než 20 let zkušeností.">
+    <meta name="keywords" content="advokátní kancelář Praha, právní služby, finanční právo, M&A transakce, korporátní právo, kryptoaktiva, blockchain, právník Praha, Július Csorba">
+    <meta name="author" content="Legal House - Július Csorba, advokátní kancelář, s.r.o.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.legalhouse.online/">
+    <meta property="og:title" content="Legal House | Prémiová advokátní kancelář Praha">
+    <meta property="og:description" content="Diskrétní právní služby s více než 20 lety zkušeností. Specialisté na finanční právo, M&A transakce a korporátní právo.">
+    <meta property="og:image" content="https://www.legalhouse.online/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.legalhouse.online/">
+    <meta property="twitter:title" content="Legal House | Prémiová advokátní kancelář Praha">
+    <meta property="twitter:description" content="Diskrétní právní služby s více než 20 lety zkušeností. Specialisté na finanční právo, M&A transakce a korporátní právo.">
+    <meta property="twitter:image" content="https://www.legalhouse.online/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.legalhouse.online/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+    <!-- Language -->
+    <meta name="language" content="Czech">
+    <meta http-equiv="content-language" content="cs">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <title>Legal House | Advokátní kancelář Praha - Finanční právo, M&A, Korporátní právo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset & Custom Properties */
+        :root {
+            --espresso: #331F1C; /* Tmavší odstín */
+            --beige: #E6D7C3;
+            --beige-light: #F5EDE4;
+            --gold: #B8860B;
+            --charcoal: #2C2C2C;
+            --cream: #FBF6F0;
+            --warm-white: #FFFEF8;
+            --white: #FFFFFF;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-soft: 0 5px 20px rgba(62, 39, 35, 0.08);
+            --shadow-hover: 0 10px 30px rgba(62, 39, 35, 0.12);
+            --shadow-strong: 0 15px 40px rgba(62, 39, 35, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .btn {
+                padding: 14px 24px;
+                font-size: 0.85rem;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--charcoal);
+            background: var(--cream);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Crimson Text', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--espresso);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            min-height: 48px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--espresso);
+            color: var(--white);
+            border-color: var(--espresso);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--espresso);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--espresso);
+            border-color: var(--espresso);
+        }
+
+        .btn-secondary:hover {
+            background: var(--espresso);
+            color: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--warm-white);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: var(--transition);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        nav.scrolled {
+            padding: 10px 0;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            transition: var(--transition);
+        }
+
+        nav.scrolled .logo-img {
+            height: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-menu a {
+            color: var(--espresso);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background: var(--espresso);
+            margin: 4px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, rgba(251, 246, 240, 0.5), rgba(251, 246, 240, 0.45)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80') center/cover;
+            margin-top: 80px;
+            padding-bottom: 200px; 
+            overflow: hidden; /* UPRAVENO - Opravuje bug s horizontálním posunem */
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            color: var(--espresso);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            color: var(--charcoal);
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .decorative-line {
+            position: absolute;
+            width: 200px;
+            height: 2px;
+            background: var(--gold);
+            opacity: 0.6;
+        }
+
+        .decorative-line.horizontal {
+            right: -100px;
+            top: 50%;
+        }
+
+        .decorative-line.vertical {
+            width: 1px;
+            height: 200px;
+            right: 10%;
+            bottom: 10%;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 120px 0; 
+            background: var(--warm-white);
+            position: relative;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40%;
+            height: 70%;
+            background: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1000&q=80') center/cover;
+            opacity: 0.45;
+            z-index: 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-text h2 {
+            margin-bottom: 3rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, var(--beige-light) 0%, var(--cream) 100%);
+            padding: 40px;
+            border-left: 4px solid var(--gold);
+            margin: 40px 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--espresso);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--beige);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -44px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .timeline-year {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        /* Legal Areas */
+        .legal-areas {
+            padding: 120px 0;
+            background: linear-gradient(to bottom, var(--warm-white) 0%, var(--cream) 100%);
+        }
+
+        .legal-areas h2 {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .area-card {
+            background: var(--warm-white);
+            padding: 50px 40px;
+            border: 1px solid var(--beige-light);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .area-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--beige-light) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--gold);
+        }
+
+        .area-card:hover::before {
+            opacity: 0.3;
+        }
+
+        .area-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .area-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .area-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .area-card p {
+            color: var(--charcoal);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Pillars Section */
+        .hero-pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: -120px auto 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .pillar {
+            background: var(--beige-light);
+            padding: 50px 40px;
+            box-shadow: var(--shadow-strong);
+            text-align: center;
+            position: relative;
+            transition: var(--transition);
+            border: 1px solid var(--beige);
+        }
+
+        .pillar:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(62, 39, 35, 0.25);
+        }
+
+        .pillar-number {
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .pillar h3 {
+            font-size: 1.8rem;
+            color: var(--espresso);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .pillar p {
+            font-size: 1rem;
+            color: var(--charcoal);
+            line-height: 1.8;
+        }
+
+        /* References */
+        .references {
+            padding: 120px 0;
+            background: var(--beige-light);
+        }
+
+        .references h2 {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .reference-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            font-size: 1.2rem;
+            color: var(--charcoal);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .stat-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-circle {
+            width: 150px;
+            height: 150px;
+            border: 3px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            background: var(--warm-white);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--espresso);
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--charcoal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 80px;
+        }
+
+        .testimonial {
+            background: var(--warm-white);
+            padding: 40px;
+            position: relative;
+            border: 1px solid var(--beige-light);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .testimonial::before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--gold);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: 'Crimson Text', serif;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            color: var(--gold);
+            font-weight: 500;
+            text-align: right;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            padding: 120px 0;
+            background: linear-gradient(rgba(255, 254, 248, 0.6), rgba(255, 254, 248, 0.55)), 
+                        url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80') center/cover;
+            position: relative;
+        }
+
+        .contact-form-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--warm-white);
+            padding: 60px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--beige-light);
+        }
+
+        /* Contact Info Section */
+        .contact-info-section {
+            padding: 80px 0;
+            background: var(--beige-light);
+            border-top: 1px solid var(--beige);
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: var(--warm-white);
+            padding: 50px;
+            box-shadow: var(--shadow-soft);
+            height: 400px;
+            border: 1px solid var(--beige-light);
+        }
+
+        .map-container {
+            height: 100%;
+            background: #f0f0f0;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--espresso);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--beige-light);
+            background: var(--cream);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            border-radius: 4px;
+            resize: none;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--beige-light);
+            background: var(--cream);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            border-radius: 4px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: var(--warm-white);
+        }
+
+        .contact-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-item {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .info-icon {
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
+        }
+
+        .info-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: var(--gold);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .info-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--espresso);
+        }
+
+        .info-text p {
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--espresso);
+            color: var(--white);
+        }
+
+        .footer-top {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-top-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .footer-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-contact-info p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            padding: 20px 0;
+        }
+
+        .footer-bottom-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom-content p {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin: 0;
+        }
+
+        .footer-credit {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--white);
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-credit:hover {
+            opacity: 1;
+        }
+
+        .footer-credit span {
+            font-size: 0.85rem;
+            margin-right: 10px;
+        }
+
+        .footer-credit img {
+            height: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 1500px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--warm-white);
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+                box-shadow: var(--shadow-soft);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-pillars {
+                gap: 30px;
+            }
+            
+            .areas-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .contact-form {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 799px) {
+            .hero {
+                padding-bottom: 80px; 
+                min-height: auto;
+            }
+            
+            .hero-pillars {
+                grid-template-columns: 1fr; 
+                margin-top: 60px;
+                gap: 20px;
+            }
+
+            .about-section {
+                padding-top: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-buttons .btn {
+                text-align: center;
+            }
+            
+            .about-content,
+            .contact-cards {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pillar {
+                padding: 40px 30px;
+                box-shadow: 0 10px 30px rgba(62, 39, 35, 0.15);
+            }
+
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                gap: 20px;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+
+            .contact-card {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .btn {
+                padding: 16px 30px;
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+
+            .contact-form-section {
+                padding: 80px 0;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .area-card {
+                padding: 40px 30px;
+            }
+
+            .timeline::before {
+                display: none;
+            }
+
+            .timeline-item {
+                padding-left: 0;
+                padding-bottom: 30px;
+            }
+
+            .decorative-line {
+                display: none;
+            }
+
+            .about-section::before {
+                display: none;
+            }
+
+            .footer-top-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .logo-img {
+                height: 35px;
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+                -webkit-backface-visibility: hidden;
+                transform: translateZ(0);
+            }
+
+            .stat-circle {
+                width: 120px;
+                height: 120px;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <img src="logo-full.png" alt="Július Csorba advokátní kancelář" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Úvod</a></li>
+                <li><a href="#about">O kanceláři</a></li>
+                <li><a href="#areas">Právní oblasti</a></li>
+                <li><a href="#references">Reference</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Součást Vašeho úspěchu</h1>
+                <p class="hero-subtitle fade-in">
+                    Poskytujeme špičkové právní služby s více než 20 lety zkušeností<br>
+                    ve všech oblastech spojených s podnikáním
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="#contact" class="btn btn-primary">Nezávazná konzultace</a>
+                    <a href="#areas" class="btn btn-secondary">Naše služby</a>
+                </div>
+            </div>
+            <div class="decorative-line horizontal"></div>
+            <div class="decorative-line vertical"></div>
+        </div>
+    </section>
+
+    <div class="hero-pillars">
+        <div class="pillar fade-in">
+            <div class="pillar-number">01</div>
+            <h3>Diskrétnost</h3>
+            <p>Absolutní důvěrnost a ochrana vašich obchodních zájmů je naší prioritou.</p>
+        </div>
+        <div class="pillar fade-in">
+            <div class="pillar-number">02</div>
+            <h3>Profesionalita</h3>
+            <p>Řešení na míru založená na hlubokých znalostech a dlouholeté praxi.</p>
+        </div>
+        <div class="pillar fade-in">
+            <div class="pillar-number">03</div>
+            <h3>Výsledky</h3>
+            <p>Šetříme váš čas a dosahujeme cílů, které posouvají váš business vpřed.</p>
+        </div>
+    </div>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>O kanceláři</h2>
+                    <p>
+                        Naše advokátní kancelář představuje špičku v oblasti právních služeb 
+                        s více než dvacetiletou tradicí úspěšné praxe. Naše expertise pokrývá 
+                        komplexní právní poradenství ve všech oblastech podnikání.
+                    </p>
+                    <div class="quote-box">
+                        "Kompetence. Zkušenosti. Znalosti. To jsou pilíře, na kterých 
+                        stavíme naši práci pro klienty."
+                    </div>
+                    <p>
+                        Výborně známe trh právních služeb v České republice a dalších zemích 
+                        Střední a Východní Evropy. Proto pokud zjistíme, že potřebnou právní 
+                        službu Vám neumíme poskytnout, konkrétně Vám poradíme, na koho se obrátit.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="legal-areas" id="areas">
+        <div class="container">
+            <h2 class="fade-in">Právní oblasti</h2>
+            <div class="areas-grid">
+                <div class="area-card fade-in">
+                    <div class="area-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke-linejoin="round"/>
+                            <path d="M12 11v6M12 7v2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Finanční právo & Kryptoaktiva</h3>
+                    <p>Kryptoaktiva a s nimi související služby. Dluhopisy a investiční nástroje. Emise investičních nástrojů.</p>
+                </div>
+                <div class="area-card fade-in">
+                    <div class="area-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="7" height="7" stroke-linejoin="round"/>
+                            <rect x="14" y="3" width="7" height="7" stroke-linejoin="round"/>
+                            <rect x="14" y="14" width="7" height="7" stroke-linejoin="round"/>
+                            <rect x="3" y="14" width="7" height="7" stroke-linejoin="round"/>
+                            <path d="M10 10l4 4M14 10l-4 4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>M&A transakce</h3>
+                    <p>Nákup a prodej obchodních společností. Právní prověrka, transakční vyjednávání, dokumentace, financování.</p>
+                </div>
+                <div class="area-card fade-in">
+                    <div class="area-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Provozní financování</h3>
+                    <p>Obchodní smlouvy. Zajištění závazků. Komplexní právní podpora pro hladký chod vašeho podnikání.</p>
+                </div>
+                <div class="area-card fade-in">
+                    <div class="area-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Korporátní právo</h3>
+                    <p>Valné hromady, ochrana práv akcionáře, akcionářské smlouvy. Fúze a jiné přeměny společností.</p>
+                </div>
+                <div class="area-card fade-in">
+                    <div class="area-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                            <line x1="8" y1="12" x2="8" y2="16" stroke-linecap="round"/>
+                            <line x1="16" y1="12" x2="16" y2="16" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Gaming & Gambling</h3>
+                    <p>Herní právo, zodpovědné hraní. Licenční procesy před odvětvovými regulátory.</p>
+                </div>
+                <div class="area-card fade-in">
+                    <div class="area-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            <path d="M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h3>Nadnárodní struktury</h3>
+                    <p>Hospodářská soutěž. Nadnárodní a offshore struktury. Daňová strukturalizace transakcí.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="references" id="references">
+        <div class="container">
+            <h2 class="fade-in">Reference</h2>
+            <p class="reference-intro fade-in">
+                Klientské a transakční reference Vám poskytneme na požádání. 
+                Rádi ukážeme, co za námi je.
+            </p>
+            
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-circle">
+                        <span class="stat-number">150+</span>
+                    </div>
+                    <p class="stat-label">Úspěšných transakcí</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-circle">
+                        <span class="stat-number">500M+</span>
+                    </div>
+                    <p class="stat-label">EUR objem transakcí</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-circle">
+                        <span class="stat-number">20+</span>
+                    </div>
+                    <p class="stat-label">Let zkušeností</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-circle">
+                        <span class="stat-number">24/7</span>
+                    </div>
+                    <p class="stat-label">Dostupnost</p>
+                </div>
+            </div>
+
+            <div class="reference-note fade-in" style="text-align: center; font-size: 1.3rem; color: var(--charcoal); margin-top: 60px; font-style: italic;">
+                Konkrétní reference Vám poskytneme na vyžádání.
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center;">Krok správným směrem</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--charcoal); margin-bottom: 60px;" class="fade-in">
+                Správný první krok
+            </p>
+            <div class="contact-form-wrapper">
+                <form class="contact-form fade-in" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4897a1a2-fc50-4239-bfea-e08d3f0a8405">
+                    <input type="hidden" name="subject" value="Nová zpráva z webu Legal House">
+                    <input type="hidden" name="from_name" value="Legal House Web">
+                    <div class="form-group">
+                        <label for="name">Jméno a příjmení</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Společnost</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Vaše zpráva</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Odeslat zprávu
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <div class="footer-brand">
+                        <div>
+                            <img src="logo-full.png" alt="Július Csorba advokátní kancelář" style="height: 70px; width: auto; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                            <p>Prémiové právní služby s více než dvacetiletou tradicí. Diskrétnost, profesionalita a výsledky, které posouvají váš business vpřed.</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Kontaktní údaje</h3>
+                        <div class="footer-contact-info">
+                            <p><strong>Július Csorba, advokátní kancelář, s.r.o.</strong></p>
+                            <p>Žitná 562/10<br>120 00 Praha 2</p>
+                            <p>IČO: 041 33 102</p>
+                            <p>Email: info@legalhouse.online</p>
+                            <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 10px;">Společnost zapsaná v obchodním rejstříku<br>Městského soudu v Praze pod sp.zn. C242329</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>© 2025 Július Csorba, advokátní kancelář, s.r.o. Všechna práva vyhrazena.</p>
+                    <a href="https://www.mescon.cz/" target="_blank" class="footer-credit">
+                        <span>Webové stránky od</span>
+                        <img src="https://imagedelivery.net/2OhTeUm5dT07PSQroFepFw/40be5d28-47ca-4830-fcae-0a3ee9e60200/public" alt="Mescon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Number animation
+        function animateValue(element, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                element.textContent = Math.floor(progress * (end - start) + start) + element.dataset.suffix;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Animate numbers when visible
+        const numberObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                    const number = entry.target;
+                    const value = parseInt(number.textContent);
+                    number.dataset.suffix = number.textContent.replace(/[0-9]/g, '');
+                    animateValue(number, 0, value, 2000);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number').forEach(el => {
+            numberObserver.observe(el);
+        });
+
+        // Seasonal effect
+        function addSeasonalEffect() {
+            const hero = document.querySelector('.hero');
+            const month = new Date().getMonth();
+            let imageUrl = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80'; // Default - office
+            
+            // Winter (December, January, February)
+            if (month === 11 || month === 0 || month === 1) {
+                imageUrl = 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=2000&q=80'; // Library winter
+            }
+            // Spring (March, April, May)
+            else if (month >= 2 && month <= 4) {
+                imageUrl = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2000&q=80'; // Office spring
+            }
+            // Summer (June, July, August)
+            else if (month >= 5 && month <= 7) {
+                imageUrl = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80'; // Bright office
+            }
+            // Autumn (September, October, November)
+            else if (month >= 8 && month <= 10) {
+                imageUrl = 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=2000&q=80'; // Warm office
+            }
+            
+            hero.style.background = `linear-gradient(to right, rgba(251, 246, 240, 0.5), rgba(251, 246, 240, 0.45)), url('${imageUrl}') center/cover`;
+        }
+        
+        addSeasonalEffect();
+
+        // Form submission - AJAX with Web3Forms
+        document.querySelector('.contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.textContent;
+            
+            // Disable button and show sending state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Odesílám...';
+            
+            try {
+                const formData = new FormData(form);
+                
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Success - change button to "Odesláno"
+                    submitButton.textContent = 'Odesláno ✓';
+                    submitButton.style.backgroundColor = '#28a745';  // Green color for success
+                    submitButton.style.borderColor = '#28a745';
+                    form.reset();
+                    
+                    // Optional: Reset button after 5 seconds
+                    setTimeout(() => {
+                        submitButton.textContent = originalButtonText;
+                        submitButton.disabled = false;
+                        submitButton.style.backgroundColor = '';
+                        submitButton.style.borderColor = '';
+                    }, 5000);
+                } else {
+                    // Error
+                    submitButton.textContent = 'Chyba při odeslání';
+                    setTimeout(() => {
+                        submitButton.textContent = originalButtonText;
+                        submitButton.disabled = false;
+                    }, 3000);
+                }
+            } catch (error) {
+                // Network error
+                submitButton.textContent = 'Chyba připojení';
+                setTimeout(() => {
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

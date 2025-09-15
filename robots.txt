@@ -1,0 +1,48 @@
+# Robots.txt for Legal House
+# Created: 2025-09-01
+
+# Allow all robots
+User-agent: *
+Allow: /
+
+# Block potential admin or private directories (if they exist in future)
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemap locations
+Sitemap: https://www.legalhouse.cz/sitemap.xml
+Sitemap: https://www.legalhouse.online/sitemap.xml
+
+# Crawl-delay for bots that support it (in seconds)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Seznambot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
